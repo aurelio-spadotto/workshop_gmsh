@@ -33,12 +33,11 @@
 					<p> Workshop 
 						<br> 26-27 January 2026, Montpellier 
 						<br>
-						Download:<br> 
+						<!-- Download:<br> 
 						<strong>
 							<a href="img/NEMESISKick-OffWorkshopBooklet.pdf">
 								BOOKLET	
 							</a>
-							<!--
 							<br>
 							<a href="img/Suggested&#32;Restaurants.pdf">
 								Suggested Restaurants
@@ -47,8 +46,7 @@
 							<a href="img/HOW&#32;TO&#32;GET&#32;TO&#32;THE&#32;BEACH.pdf">
 								How to get to the beach
 							</a>
-						-->
-						</strong>
+						</strong> -->
 					</p>
 				</div>
 			</div>
@@ -346,18 +344,40 @@
 		<!-- Organizers -->
 		<article id="organizers">
 			<h2 class="major">Organizers</h2>
-			<!--<span class="image main"><img src="images/pic03.jpg" alt="" /></span>-->
+
 			<style>
+				.committee-wrapper {
+					display: flex;
+					gap: 4%;
+				}
+
+				.committee-section {
+					flex: 1;
+				}
+
+				.committee-section h3 {
+					text-align: center;
+					margin-bottom: 20px;
+				}
+
+				.people {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 20px;
+				}
+
 				.service-item {
 					text-align: center;
+					max-width: 180px;
 				}
 
 				.icon_peple {
 					width: 100px;
 					height: 100px;
-					display: inline-block;
-					text-align: center;
-					line-height: 10px;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
 					border: 3px solid #fff;
 					border-radius: 50%;
 					background-color: #ffffff;
@@ -365,44 +385,75 @@
 
 				.icon_img {
 					max-width: 100%;
-					vertical-align: middle;
 					border: 0;
+				}
 
+				/* Mobile */
+				@media (max-width: 768px) {
+					.committee-wrapper {
+						flex-direction: column;
+					}
 				}
 			</style>
-			<div class="col-md-1"></div>
-	
-				<div class="col-md-2 col-sm-6 col-xs-12">
-				<div class="service-item">
-					<div class="icon_peple">
-						<img src="img/service_icon_03.png" alt="" class="icon_img">
+
+			<div class="committee-wrapper">
+
+				<!-- Scientific Committee -->
+				<div class="committee-section">
+					<h3>Scientific Committee</h3>
+
+					<div class="people">
+						<div class="service-item">
+							<div class="icon_peple">
+								<img src="img/service_icon_03.png" class="icon_img">
+							</div>
+							<h4>Daniele A.<br>Di Pietro</h4>
+							<p>Institut Montpelliérain Alexander Grothendieck,<br>Université de Montpellier</p>
+						</div>
+
+						<div class="service-item">
+							<div class="icon_peple">
+								<img src="img/Jerome_Droniou.png" class="icon_img">
+							</div>
+							<h4>Jérôme<br>Droniou</h4>
+							<p>Institut Montpelliérain Alexander Grothendieck,<br>Université de Montpellier</p>
+						</div>
+
+						<div class="service-item">
+							<div class="icon_peple">
+								<img src="img/Christophe_Geuzaine.png" class="icon_img">
+							</div>
+							<h4>Christophe<br>Geuzaine</h4>
+							<p>Université de Liège</p>
+						</div>
 					</div>
-					<h4>Daniele A.<br> Di Pietro</h4>
-					<div class="line-dec"></div>
-					<p>Institut Montpelli&eacute;rain Alexander Grothendieck, <br>Universit&eacute; de Montpellier</p>
 				</div>
-			</div>
-			<div class="col-md-2 col-sm-6 col-xs-12">
-				<div class="service-item">
-					<div class="icon_peple">
-						<img src="img/Jerome_Droniou.png" alt="" class="icon_img">
+
+				<!-- Organizing Committee -->
+				<div class="committee-section">
+					<h3>Organizing Committee</h3>
+					<div class="people">
+						<div class="service-item">
+							<div class="icon_peple">
+								<img src="img/aurelio.png" class="icon_img">
+							</div>
+							<h4>Aurelio<br>Spadotto</h4>
+						</div>
+
+						<div class="service-item">
+							<div class="icon_peple">
+								<img src="img/erik.png" class="icon_img">
+							</div>
+							<h4>Erik<br>Nilsson</h4>
+						</div>
+						
+					<p> &emsp; Université de Montpellier</p>
 					</div>
-					<h4>Jérôme<br>Droniou</h4>
-					<div class="line-dec"></div>
-					<p> Institut Montpelli&eacute;rain Alexander Grothendieck, <br>Universit&eacute; de Montpellier</p>
 				</div>
-			</div>
-			<div class="col-md-2 col-sm-6 col-xs-12">
-				<div class="service-item">
-					<div class="icon_peple">
-						<img src="img/Christophe_Geuzaine.png" alt="" class="icon_img">
-					</div>
-					<h4>Christophe<br>Geuzaine</h4>
-					<div class="line-dec"></div>
-					<p> <br>Universit&eacute; de Li&egrave;ge</p>
-				</div>
+
 			</div>
 		</article>
+
 
 		<!-- Venue -->
 		<article id="venue">
